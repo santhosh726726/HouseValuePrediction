@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home Price Prediction</title>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="app.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <form class="form">
+        <label for="areaIncome">Area Income</label>
+        <input type="number" id="areaIncome" name="areaIncome" placeholder="Enter Area Income">
+
+        <label for="houseAge">House Age</label>
+        <input type="number" id="houseAge" name="houseAge" placeholder="Enter House Age">
+
+        <label for="noOfRooms">No of Rooms</label>
+        <input type="number" id="noOfRooms" name="noOfRooms" placeholder="No of Rooms">
+
+        <label for="noOfBedRooms">No of Bedrooms</label>
+        <input type="number" id="noOfBedRooms" name="noOfBedRooms" placeholder="No of Bedrooms">
+      </form>
+        <button onclick="calculatePrice()" class="btn btn-primary">Calculate Price</button>
+      
+    </div>
+
+    <div id="uiEstimatedPrice" class="result">
+      <h2></h2>
+    </div>
+  </div>
+</body>
+
+</html>
